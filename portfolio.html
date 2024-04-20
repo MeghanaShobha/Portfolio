@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Personal portfolio website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    
+                    <a>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">portfolio</a></li>
+                    </a>
+                </nav>
+                <div class="header-text">
+                    <p>Student</p>
+                    <h1>Hi, I'm <span>
+                        Meghana </span><br>From Bengaluru </h1>
+                </div>
+            </p<>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        
+                        <img src="megha/image1.png">
+
+                    </div>
+                    <div class="about=-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am Meghana from Presidency University<br>
+                           I am doing Engineering in CSE(IOT)<br>
+                           IOT-Internet Of Things <br>
+                           2021-2025
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li>HTML-CSS-JS</li>
+                        <li>Java(Basic)</li>
+                        <li>C++(Basic)</li>
+
+                </ul>
+                </div>
+                <div class="tab-contents " id="Experience">
+                    <ul>
+                        <li>QR code generator</li>
+                        <li>Sonar 180 degree</li>
+                        <li>Image classification</li>
+
+                </ul>
+                </div>  
+                <div class="tab-contents " id="Education">
+                    <ul>
+                        <li>Nalanda High School</li>
+                        <li>Vidya Nidhi PU College</li>
+                        <li>Presidency University</li>
+
+                </ul>
+                </div>      
+                    </br>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div id="portfolio">
+            <h2>Portfolio</h2>
+            <h3>QR code generator</h3><br>
+            <p>
+                Experienced in front-end technologies such as HTML, CSS, and
+                JavaScript
+                Strong understanding of asynchronous programming and event driven architecture
+                Knowledgeable about RESTful API design and implementation
+                Skilled in version control systems such as Git
+                Excellent problem-solving and debugging abilities
+                Led me to understand the concepts of Node.js
+                </p>
+            <h3>Sonar 180 degree</h3><br>
+            <p>
+                This project involves using ultrasonic sensors to detect objects
+                within a 180-degree field of view. The sonar sensor detects an
+                object and generates a buzzar.
+                This data is then processed to determine the distance and presence
+                of objects. The project include hardware components like
+                ultrasonic sensors, a microcontroller (e.g. Arduino), and possibly a
+                servo motor for achieving the 180-degree coverage.
+                Making it a versatile solution for various applications such as
+                robotics or security systems or military applications.</p>
+            <h3>Image classification</h3><br>
+            <p>
+                Image classification based on satellite imagery is a crucial application with various real-world uses.
+                This type of project involves analyzing satellite images to categorize and understand the
+                features present in the Earth'
+                s surface.
+                The primary goal of this project is to develop a robust image classification system that can analyze
+                satellite imagery and categorize different land cover or land use classes.
+                This aids in gaining valuable insights into changes in the environment, urban development,
+                agriculture and more</p>
+            
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname) {
+                for (var tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (var tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+       
+    </header<>
+</html>
